@@ -1,0 +1,19 @@
+{
+  "name": "WilliamWhortonDotCom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "npx tailwindcss -i ./static/src/input.css -o ./static/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "npx": "^10.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

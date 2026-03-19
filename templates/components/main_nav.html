@@ -1,0 +1,6 @@
+{% import 'macros/main_nav_link.html' as nav %}
+<ul>
+    {% for link in links %}
+        {{ nav.render_main_nav_link(link) }}
+    {% endfor %}
+</ul>
