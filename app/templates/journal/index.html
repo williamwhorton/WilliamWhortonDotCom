@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Journal Titles</h1>
+<ul>
+    {% for article in articles %}
+        <li>
+            <a href={{ url_for('main.journal_article', slug=article.meta.slug) }}>{{ article.meta.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

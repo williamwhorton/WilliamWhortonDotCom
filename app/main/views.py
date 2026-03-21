@@ -1,9 +1,13 @@
-from flask import render_template
+from flask import render_template, current_app, Flask
 from . import main
 
 links = [
     {'name': 'Home', 'routeName': '.index'},
+    {'name': 'Work', 'routeName': '.work'},
+    {'name': 'Journal', 'routeName': '.journal'},
     {'name': 'About', 'routeName': '.about'},
+    {'name': 'Contact', 'routeName': '.contact'},
+
 ]
 
 
@@ -19,4 +23,31 @@ def index():
 
 @main.route('/about')
 def about():
-    return render_template('about/index.html', text='This is the about page')
+    return render_template('about/index.html')
+
+
+@main.route('/contact')
+def contact():
+    return render_template('contact/index.html')
+
+
+@main.route('/work')
+def work():
+    return render_template('work/index.html')
+
+
+@main.route('/journal')
+def journal():
+    articles = current_app.pages
+
+    return render_template('journal/index.html', articles=articles)
+
+
+@main.route('/journal/<string:slug>')
+def journal_article(slug):
+    for page in current_app.pages:
+        if page.meta['slug'] == slug:
+            article = page
+            return render_template('journal/article.html', article=article)
+
+    return render_template('404.html'), 404

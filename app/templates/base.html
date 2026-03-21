@@ -9,9 +9,13 @@
     <title>William Whorton - {% block title %}{%  endblock %}</title>
     {% endblock %}
 </head>
-<body>
+<body class="bg-slate-50 font-body">
+<nav class="bg-slate-200 py-5 px-5 pb-6 mask-b-from-90% mask-b-to-100%">
 {% include 'components/main_nav.html' %}
+</nav>
+<main class="px-5">
 {% block body %}
 {% endblock %}
+</main>
 </body>
 </html>

@@ -1,5 +1,5 @@
 {% macro render_main_nav_link(link) %}
-    <li>
+    <li class="inline-block font-display text-xl font-bold">
     <a href="{{ url_for(link.routeName) }}">{{ link.name }}</a>
     </li>
 {% endmacro %}
