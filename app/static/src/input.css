@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: 'Roboto Slab Variable';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/roboto-slab-latin-wght-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Serif';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/roboto-serif-latin-wght-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/roboto-latin-wght-normal.woff2') format('woff2');
+}
+
 @theme {
-    --font-display: "Roboto", sans-serif;
-    --font-body: "Inter", sans-serif;
+    --font-display: "Roboto Slab Variable", serif;
+    --font-body: "Roboto Serif", serif;
+    --font-heading: "Roboto", sans-serif;
 }

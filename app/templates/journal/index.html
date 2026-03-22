@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>Journal Titles</h1>
+{% extends 'base.html' %}
+{% block title %}Journal{% endblock %}
+{% block body %}
+<h1 class="text-2xl font-bold">Journal Titles</h1>
 <ul>
     {% for article in articles %}
         <li>
@@ -13,5 +9,4 @@
         </li>
     {% endfor %}
 </ul>
-</body>
-</html>
+{% endblock %}
