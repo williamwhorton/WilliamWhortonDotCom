@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <p class="font-display">Test font.</p>
-</body>
-</html>
+{% import 'macros/project_writeup.html' as writeup %}
+{% extends "base.html" %}
+{% block title %}Work{% endblock %}
+{% block body %}
+    <section>
+        <h1>Work</h1>
+        <p>This is the work page.</p>
+    </section>
+    <section>
+    {% for project in projects %}
+        {{ writeup.render_project_writeup(project) }}
+    {% endfor %}
+    </section>
+{% endblock %}

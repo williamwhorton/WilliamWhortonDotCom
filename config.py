@@ -6,17 +6,26 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
-    FLATPAGES_AUTO_RELOAD = True
-    FLATPAGES_EXTENSION = '.md'
-    FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
-    FLATPAGES_MARKDOWN_EXTENSION_CONFIGS = {
+    FLATPAGES_JOURNAL_AUTO_RELOAD = True
+    FLATPAGES_JOURNAL_EXTENSION = '.md'
+    FLATPAGES_JOURNAL_MARKDOWN_EXTENSIONS = ['codehilite']
+    FLATPAGES_JOURNAL_MARKDOWN_EXTENSION_CONFIGS = {
         'codehilite': {'css_class': 'highlight'}
     }
-    FLATPAGES_ROOT = 'content'
+    FLATPAGES_JOURNAL_ROOT = 'content/journal'
+
+    FLATPAGES_WORK_AUTO_RELOAD = True
+    FLATPAGES_WORK_EXTENSION = '.md'
+    FLATPAGES_WORK_MARKDOWN_EXTENSIONS = ['codehilite']
+    FLATPAGES_WORK_MARKDOWN_EXTENSION_CONFIGS = {
+        'codehilite': {'css_class': 'highlight'}
+    }
+    FLATPAGES_WORK_ROOT = 'content/work'
 
     @staticmethod
     def init_app(app):
-        app.pages = FlatPages(app)
+        app.journal_pages = FlatPages(app, name="journal")
+        app.work_pages = FlatPages(app, name="work")
 
 class DevelopmentConfig(Config):
     DEBUG = True
