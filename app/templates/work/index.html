@@ -8,7 +8,7 @@
     </section>
     <section>
     {% for project in projects %}
-        {{ writeup.render_project_writeup(project) }}
+        {{ writeup.render_project_writeup(project, loop.index) }}
     {% endfor %}
     </section>
 {% endblock %}
