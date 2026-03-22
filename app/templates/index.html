@@ -2,5 +2,20 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-<h1>Hello, world!</h1>
+    <div class="grid grid-cols-12">
+        <div class="col-span-4">
+            <img src="{{ url_for('static', filename='images/Bill-Profile.jpg') }}" alt="Photograph of the most incredibly handsome software engineer you can imagine. Trust me, he puts Adonis to shame." class="w-full h-auto">
+            <p class="text-sm text-gray-500 mt-2">Yes, this is the best, most professional picture of myself I could find.</p>
+        </div>
+        <div class="col-span-6 col-start-6 flex flex-col justify-end">
+            <div class="mb-6">
+                <h1 class="text-6xl font-display font-bold mb-4">Hi, I'm Bill.</h1>
+                <p class="text-4xl text-gray-700 mb-3">I'm a software engineer from Arnold, Maryland. This is my website.</p>
+            </div>
+            <p class="text-xl text-gray-900 mb-3">Since about 2014 I've been building websites and applications for a living. I mostly work on the front end, but I've done my share of back end work as well. I've also dabbled in design, and I've learned a lot about user experience over the years.</p>
+            <p class="text-xl text-gray-900 mb-3">I love building software, and I'm pretty good at it if I do say so myself, but I also love the big picture. My entire career has been about solving problems and making things better, and I'm looking forward to taking on more strategic roles. Don't get me wrong, I'm a great engineer. I can build a great application, but I can also build bullet-proof development processes and strong teams.</p>
+            <p class="text-xl text-gray-900 mb-3">Anyway, take a look around. If you want to learn about me in more detail, the conveniently-named <a class="bg-blue-800 opacity-80 text-white rounded-md px-1 " href="{{ url_for('main.about') }}">About</a> section has you covered. Here on business? You'll probably want the <a class="bg-blue-800 opacity-80 text-white rounded-md px-1 " href="{{ url_for('main.work') }}">Work</a> part. Poke around the <a class="bg-blue-800 opacity-80 text-white rounded-md px-1 " href="{{ url_for('main.journal') }}">Journal</a> section if you want to see what's been on my mind lately.</p>
+            <p class="text-xl text-gray-900 mb-3">And, of course, if you're looking for somebody to lead your team to greatness, that <a class="bg-blue-800 opacity-80 text-white rounded-md px-1 " href="{{ url_for('main.contact') }}">Contact</a> link will get you to the surest ways to get in touch with me.</p>
+        </div>
+    </div>
 {% endblock %}

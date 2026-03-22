@@ -15,5 +15,10 @@
     "@tailwindcss/cli": "^4.2.2",
     "npx": "^10.2.2",
     "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.10",
+    "@fontsource-variable/roboto-serif": "^5.2.8",
+    "@fontsource-variable/roboto-slab": "^5.2.8"
   }
 }
