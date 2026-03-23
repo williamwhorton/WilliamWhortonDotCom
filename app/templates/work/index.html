@@ -2,13 +2,21 @@
 {% extends "base.html" %}
 {% block title %}Work{% endblock %}
 {% block body %}
-    <section>
-        <h1>Work</h1>
-        <p>This is the work page.</p>
+    <section class="mb-10">
+        <h1 class="text-6xl font-display font-bold mb-4">Work</h1>
+        <p class="text-xl text-gray-900 mb-4">Here are the technologies I work with and the projects I've used them on. There's going to be some scrolling involved. If you're a recruiter, you're going to hate this part.</p>
+        <p class="text-xl text-gray-900">You won't find my resume here, by the way; I tweak it pretty frequently and have a few different copies in rotation. If you're interested in my work history, check me out on <a href="https://www.linkedin.com/in/williamwhorton/" class="link">LinkedIn</a>. Or, contact me and I'll be happy to forward you a copy.</p>
     </section>
-    <section>
+    <section class="mb-10">
+    <h2 class="text-3xl font-display font-bold mb-2">Projects</h2>
+    <p class="text-xl text-gray-900 mb-10">Here are some of the things I've worked on. Many of these can be found on my <a class="link" href="https://github.com/williamwhorton">Github</a> page, in which case I've added a link to the repository. In other cases, I either don't control the repository or no longer have access to the code, in which case I've provided a link to the application when possible. In the case of some internal products that aren't publicly accessible, you'll just have to take my word for it.</p>
     {% for project in projects %}
         {{ writeup.render_project_writeup(project, loop.index) }}
     {% endfor %}
+    </section>
+    <section class="mb-10">
+        <h2 class="text-3xl font-display font-bold mb-2">Tech Stack</h2>
+        <p class="text-xl text-gray-900">These are languages and frameworks I use. I've also included some context, as well as my thoughts on them. I know it's long, but it's not an exhaustive list.</p>
+        {% include 'components/tech_tables.html' %}
     </section>
 {% endblock %}

@@ -30,3 +30,9 @@
     --font-body: "Roboto Serif", serif;
     --font-heading: "Roboto", sans-serif;
 }
+
+@layer components {
+  .link {
+    @apply bg-blue-800 opacity-80 text-white rounded-md px-1;
+  }
+}

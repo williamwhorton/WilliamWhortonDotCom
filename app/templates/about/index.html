@@ -1,8 +1,59 @@
 {% extends "base.html" %}
 {% block title %}About{% endblock %}
 {% block body %}
-    <section>
-        <h1>About</h1>
-        <p>This is the about page.</p>
+    <section class="mb-10">
+        <h1 class="text-6xl font-display font-black mb-8">About</h1>
+        <p class="text-4xl font-body text-gray-800">A portrait of the author as a middle-aged dad.</p>
+    </section>
+    <p class="text-4xl font-display text-gray-800 mb-8">I'm a software engineer, but I'm also...</p>
+    <section class="mb-10">
+        <h2 class="text-3xl font-display text-gray-800 mb-2">...a (casual) martial artist</h2>
+        <div>
+            <div>
+
+            </div>
+            <div>
+                <p class="text-xl font-body text-gray-900">Years ago I took Tai Chi with some friends. Yang style. It was fun, and it sparked an interest in martial arts that I've carried with me all my life.</p>
+                <p class="text-xl font-body text-gray-900">When I was in my 20s, I started training in an American style of jiujitsu called Budoshin at UMBC under sensei Steven Sfekas. I loved it, but I blew my knee out during a belt test, and that ended my career for a few years.</p>
+                <p class="text-xl font-body text-gray-900">Time passed, as it does. I spent several years trying to find a good place to train, and experimented with a few different styles. After my first child was born, however, time and money were an obstacle.</p>
+                <p class="text-xl font-body text-gray-900">The stars eventually aligned, and, after a while, I found a great school: <a class="link" href="https://kogendojo.com/">Kogen Dojo</a>. I've been training Muay Thai and Gracie jiujitsu there since 2023. I'm old enough to be the father of a lot of the people I train with, but, thankfully, I'm not the only old guy there. I'm not even the oldest. I'm also not the youngest.</p>
+                <p class="text-xl font-body text-gray-900">I don't want to tell you how to live, Reader, but if you aren't training, you should start. It's so much fun, and practicing restrained violence is, quite frankly, an important skill to develop. Find a place like Kogen, where there are incredible coaches and a wholesome, uplifting culture.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="mb-10">
+        <div>
+            <div class="mb-4">
+                <h2 class="text-3xl font-display text-gray-800 mb-2">...a native Marylander</h2>
+                <p class="text-xl font-body text-gray-900">As a young child I moved around a bit, but by 6 I was settled firmly in Bowie, Maryland—the K section, which will mean something to fellow Bowie people. At the age of 12 I moved to Annapolis, where I lived for about thirty years. If you've never been, go. It's a historic city where colonial history is so commonplace that you just come to expect it everywhere.</p>
+                <p class="text-xl font-body text-gray-900">Growing up in the Chesapeake Bay watershed is a blessing I didn't appreciate until I moved (briefly) away when I turned 18. If you've never been, it's hard to describe. It's the largest estuary in the United States. You can't appreciate what that means reading the words on a screen. In practice, what it means is that everywhere I lived I could smell the water. Everyone I knew had or knew someone who had a boat, and everyone gets out on the water. You get used to seeing osprey, bald eagles, and a host of other waterfowl everywhere you go. It's a magical place, and, while I've seen other parts of the country that amazed me, and that I would love to visit again, nothing compares to this place. It is unique. It is one of the most special places on Earth, and I am blessed to be here.</p>
+                <p class="text-xl font-body text-gray-900">And yes, I put Old Bay on everything.</p>
+                <p class="text-xl font-body text-gray-900">But the real ones know <a class="link" href="https://jospices.com/">J.O. Seasoning</a> is the real deal.</p>
+            </div>
+            <div>
+                <img class="w-full h-auto" src="{{ url_for('static', filename='images/water.jpeg') }}" alt="Waterfront">
+                <p class="text-gray-500 text-sm mt-2">There is no processing on this image. This is seriously what it looks like about a football field away from my house. I get to live here.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="mb-10">
+        <h2 class="text-3xl font-display text-gray-800 mb-2">...an autodidact</h2>
+        <p class="text-xl font-body text-gray-900">I'm not supposed to say this, but I taught myself web development.</p>
+        <p class="text-xl font-body text-gray-900">I guess that's not strictly true. I learned it by following online tutorials and just making stuff. I had some background in C and Pascal from CS class I'd taken in community college, but I dropped my CS major when I found out how much math was involved.</p>
+        <p class="text-xl font-body text-gray-900">I wasn't supposed to say that, either.</p>
+        <p class="text-xl font-body text-gray-900">The thing is, none of this is very difficult. I've always loved acquiring new skills and learning new things. I am a huge history nerd. I study economics. I read constantly. I've taken French, German, Japanese, Mandarin, Spanish, and Gaelic, although, cards on the table, I only really have any conversational ability in French. I've been meaning to pick the others back up, but you've got to pick your struggles.</p>
+        <p class="text-xl font-body text-gray-900">Anyway, point being, it's easy to learn things if you like the process of learning, you want the outcome, and you're comfortable just sort of digging around for the knowledge.</p>
+    </section>
+    <section class="mb-10">
+        <h2 class="text-3xl font-display text-gray-800 mb-2">...and</h2>
+        <p class="text-xl font-body text-gray-900">a huge metalhead,</p>
+        <p class="text-xl font-body text-gray-900">an avid gamer,</p>
+        <p class="text-xl font-body text-gray-900">a casual chicken farmer,</p>
+        <p class="text-xl font-body text-gray-900">a homebrewer,</p>
+        <p class="text-xl font-body text-gray-900">a talented cook (seriously, I worked in the restaurant business for years),</p>
+        <p class="text-xl font-body text-gray-900">a husband and a father to two amazing kids.</p>
     </section>
 {% endblock %}
