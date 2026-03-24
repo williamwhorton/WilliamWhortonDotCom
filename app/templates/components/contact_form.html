@@ -1,9 +1,11 @@
-<form method="POST">
+<form method="POST" class="flex flex-col gap-4 contact-form">
     {{ form.hidden_tag() }}
-    <p>{{ form.name.label }} {{ form.name(class="form-control") }}</p>
-    <p>{{ form.email.label }} {{ form.email(class="form-control") }}</p>
-    <p>{{ form.message.label }} {{ form.message(class="form-control", rows="5") }}</p>
-    <p>{{ form.submit(class="btn btn-primary") }}</p>
+    <div class="flex flex-row gap-4">
+        <p class="text-xl font-heading my-2">{{ form.name.label }} {{ form.name(class="form-control") }}</p>
+        <p class="text-xl font-heading my-2">{{ form.email.label }} {{ form.email(class="form-control") }}</p>
+    </div>
+    <p class="text-xl font-heading my-2">{{ form.message.label }} {{ form.message(class="form-control", rows="5") }}</p>
+    <p class="text-xl font-heading my-2 flex justify-end">{{ form.submit(class="w-3xs bg-blue-700 text-white") }}</p>
 </form>
 
 <!-- Flash messages -->

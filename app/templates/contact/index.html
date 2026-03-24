@@ -2,16 +2,16 @@
 {% block title %}Contact{% endblock %}
 {% block body %}
     <section>
-        <h1>Hey, friend!</h1>
-        <p>If you want to get in contact with me, please do. There are a few ways.</p>
-        <section>
-            <ul>
-                <li>Email is probably the easiest way to reach me. Get me at <a class="link" href="mailto:bill@williamwhorton.com">my homebrew email</a> or <a class="link" href="mailto:whorton@gmail.com">Gmail</a>.</li>
-                <li>You can message me at LinkedIn, which is also a pretty reliable method. Here's my profile page. <a class="link" href="https://www.linkedin.com/in/williamwhorton/">https://www.linkedin.com/in/williamwhorton/</a></li>
-                <li>Finally, you can use the form below, which I'm including largely because it's fun to make contact forms. It feels very Web 2.0. It's like a long way of emailing me, but like sending an email to someone else to send to me, so it'll take longer and there's a chance I won't see it. But, I mean, YOLO I guess.</li>
+        <h1 class="text-4xl font-display font-bold mb-4">Hey, friend!</h1>
+        <p class="text-2xl font-body mb-4">If you want to get in contact with me, please do. There are a few ways.</p>
+        <section class="mt-5 ml-5 text-xl font-body">
+            <ul class="list-disc list-inside ">
+                <li class="mb-2">Email is probably the easiest way to reach me. Get me at <a class="link" href="mailto:bill@williamwhorton.com">my homebrew email</a> or <a class="link" href="mailto:whorton@gmail.com">Gmail</a>.</li>
+                <li class="mb-2">You can message me at LinkedIn, which is also a pretty reliable method. Here's my profile page. <a class="link" href="https://www.linkedin.com/in/williamwhorton/">https://www.linkedin.com/in/williamwhorton/</a></li>
+                <li class="mb-2">Finally, you can use the form below, which I'm including largely because it's fun to make contact forms. It feels very Web 2.0. It's pretty much an indirect way of emailing me, like sending an email to someone else to send to me, so it'll take longer and there's a chance I won't see it. YOLO.</li>
             </ul>
         </section>
-        <section>
+        <section class="mt-10">
             {% include 'components/contact_form.html' %}
         </section>
     </section>

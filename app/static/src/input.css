@@ -35,6 +35,11 @@
   .link {
     @apply bg-blue-800 opacity-80 text-white rounded-md px-1;
   }
+  .contact-form {
+    input, textarea {
+      @apply w-full p-2 mb-2 border-2 border-gray-300 rounded-md;
+    }
+  }
 }
 
 @layer utilities {
