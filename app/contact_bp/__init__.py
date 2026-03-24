@@ -11,7 +11,7 @@ class ContactForm(FlaskForm):
     message = TextAreaField('Message', validators=[DataRequired()])
     submit = SubmitField('Send')
 
-@contact_bp.route('/contact', methods=['GET', 'POST'])
+@contact_bp.route('/contact/', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
     if form.validate_on_submit():

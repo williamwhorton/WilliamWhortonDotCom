@@ -9,3 +9,4 @@ Werkzeug==3.1.6
 flask-flatpages
 flask-wtf
 wtforms
+frozen-flask

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="vps35865.dreamhostps.com" id="b5c6eb60-b44c-4913-b3a9-52a2e3299de7" port="22" nameFormat="DESCRIPTIVE" username="wwhorton" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

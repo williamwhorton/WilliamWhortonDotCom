@@ -22,6 +22,8 @@ class Config:
     }
     FLATPAGES_WORK_ROOT = 'content/work'
 
+    FREEZER_DESTINATION = 'build'
+
     @staticmethod
     def init_app(app):
         app.journal_pages = FlatPages(app, name="journal")

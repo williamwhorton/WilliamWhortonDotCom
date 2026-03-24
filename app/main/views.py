@@ -7,19 +7,19 @@ def index():
     return render_template('index.html')
 
 
-@main.route('/about')
+@main.route('/about/')
 def about():
     return render_template('about/index.html')
 
 
-@main.route('/work')
+@main.route('/work/')
 def work():
     projects = current_app.work_pages
 
     return render_template('work/index.html', projects=projects)
 
 
-@main.route('/journal')
+@main.route('/journal/')
 def journal():
     articles = current_app.journal_pages
 
