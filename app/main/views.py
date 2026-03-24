@@ -1,20 +1,6 @@
 from flask import render_template, current_app, Flask
 from . import main
 
-links = [
-    {'name': 'Home', 'routeName': '.index'},
-    {'name': 'Work', 'routeName': '.work'},
-    {'name': 'Journal', 'routeName': '.journal'},
-    {'name': 'About', 'routeName': '.about'},
-    {'name': 'Contact', 'routeName': '.contact'},
-
-]
-
-
-@main.context_processor
-def inject_links():
-    return dict(links=links)
-
 
 @main.route('/')
 def index():
@@ -24,11 +10,6 @@ def index():
 @main.route('/about')
 def about():
     return render_template('about/index.html')
-
-
-@main.route('/contact')
-def contact():
-    return render_template('contact/index.html')
 
 
 @main.route('/work')
