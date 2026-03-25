@@ -1,6 +1,14 @@
 {% import 'macros/main_nav_link.html' as nav %}
-<ul class="flex justify-center gap-10">
+<ul class="hidden lg:flex justify-center gap-10">
     {% for link in links %}
         {{ nav.render_main_nav_link(link) }}
     {% endfor %}
 </ul>
+<div class="flex flex-col lg:hidden items-end">
+    <button id="mobile-menu-button" class="w-16 h-16 mobile-menu" popovertarget="mobile-menu-list"></button>
+    <ul id="mobile-menu-list" class="list-inside list-none mobile-menu-list text-right" popover>
+        {% for link in links %}
+            {{ nav.render_main_nav_link(link) }}
+        {% endfor %}
+    </ul>
+</div>
