@@ -6,7 +6,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('app/static/fonts/roboto-slab-latin-wght-normal.woff2') format('woff2');
+  src: url('../fonts/roboto-slab-latin-wght-normal.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('app/static/fonts/roboto-serif-latin-wght-normal.woff2') format('woff2');
+  src: url('../fonts/roboto-serif-latin-wght-normal.woff2') format('woff2');
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('app/static/fonts/roboto-latin-wght-normal.woff2') format('woff2');
+  src: url('../fonts/roboto-latin-wght-normal.woff2') format('woff2');
 }
 
 @theme {
