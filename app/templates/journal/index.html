@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Journal{% endblock %}
 {% block body %}
-<h1 class="text-2xl font-bold">Journal Titles</h1>
-<ul>
+<h2 class="text-6xl font-display font-black mb-8 underline underline-offset-10">Articles</h2>
+<ul class="list-none list-inside">
     {% for article in articles %}
-        <li>
-            <a href={{ url_for('main.journal_article', slug=article.meta.slug) }}>{{ article.meta.title }}</a>
+        <li class="mb-10">
+            <a class="text-4xl text-gray-900 italic mb-4" href={{ url_for('main.journal_article', slug=article.meta.slug) }}>{{ article.meta.title }}</a>
+            <p class="text-lg text-gray-500 italic">{{ article.meta.description | truncate }}</p>
         </li>
     {% endfor %}
 </ul>

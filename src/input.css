@@ -55,6 +55,22 @@
       @apply bg-blue-800 opacity-80 text-white rounded-md px-1;
     }
   }
+  .journal-entry {
+    @apply mb-4;
+    h2 {
+      @apply text-6xl font-display font-bold mb-6;
+    }
+    h3 {
+      @apply text-4xl font-display font-bold mb-4;
+    }
+    p {
+      @apply text-2xl mb-4;
+    }
+    a {}
+    img {
+      @apply mb-6 w-full h-auto;
+    }
+  }
   .mobile-menu {
     @apply w-12 h-12;
     background-image: url('../images/hamburger.svg');

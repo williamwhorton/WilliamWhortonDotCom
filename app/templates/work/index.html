@@ -9,7 +9,7 @@
     </section>
     <section class="mb-10">
     <h2 class="text-4xl font-display font-bold mb-2">Projects</h2>
-    <p class="text-xl text-gray-900 mb-10">Here are some of the things I've worked on. Many of these can be found on my <a class="link" href="https://github.com/williamwhorton">Github</a> page, in which case I've added a link to the repository. In other cases, I either don't control the repository or no longer have access to the code, in which case I've provided a link to the application when possible. In the case of some internal products that aren't publicly accessible, you'll just have to take my word for it.</p>
+    <p class="text-xl text-gray-900 mb-10">Here are some (not all) of the things I've worked on. Many of these can be found on my <a class="link" href="https://github.com/williamwhorton">Github</a> page, in which case I've added a link to the repository. In other cases, I either don't control the repository or no longer have access to the code, in which case I've provided a link to the application when possible. In the case of some internal products that aren't publicly accessible, you'll just have to take my word for it.</p>
     {% for project in projects %}
         {{ writeup.render_project_writeup(project, loop.index) }}
     {% endfor %}
