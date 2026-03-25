@@ -19,7 +19,7 @@ class ContactForm(FlaskForm):
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        api_url = '/contact_api.php'
+        api_url = 'https://williamwhorton.com/contact_api.php'
 
         payload = json.dumps({
             'name': form.name.data,

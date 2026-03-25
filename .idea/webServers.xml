@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="b66202f1-86dd-485b-b5de-488d294654e6" name="williamwhorton.com" url="https://williamwhorton.com">
-        <fileTransfer rootFolder="/home/wwhorton/williamwhorton" accessType="SFTP" host="vps35865.dreamhostps.com" port="22" sshConfigId="b5c6eb60-b44c-4913-b3a9-52a2e3299de7" sshConfig="wwhorton@vps35865.dreamhostps.com:22 password">
+        <fileTransfer rootFolder="/home/wwhorton/williamwhorton.com" accessType="SFTP" host="vps35865.dreamhostps.com" port="22" sshConfigId="b5c6eb60-b44c-4913-b3a9-52a2e3299de7" sshConfig="wwhorton@vps35865.dreamhostps.com:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
