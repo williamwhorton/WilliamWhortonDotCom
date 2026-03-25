@@ -22,8 +22,6 @@ class Config:
     }
     FLATPAGES_WORK_ROOT = 'content/work'
 
-    FREEZER_DESTINATION = 'build'
-
     @staticmethod
     def init_app(app):
         app.journal_pages = FlatPages(app, name="journal")
@@ -32,9 +30,13 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
 
+class BuildConfig(Config):
+    DEBUG = False
+    FREEZER_DESTINATION = 'build'
+
 
 config = {
     'development': DevelopmentConfig,
-
+    'build': BuildConfig,
     'default': DevelopmentConfig
 }

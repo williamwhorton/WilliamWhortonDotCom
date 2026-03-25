@@ -26,7 +26,7 @@ def journal():
     return render_template('journal/index.html', articles=articles)
 
 
-@main.route('/journal/<string:slug>')
+@main.route('/journal/<string:slug>/')
 def journal_article(slug):
     for page in current_app.journal_pages:
         if page.meta['slug'] == slug:

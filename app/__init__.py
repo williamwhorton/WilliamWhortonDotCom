@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_frozen import Freezer
 
 from config import config
 
@@ -15,7 +14,6 @@ links = [
 
 def create_app(config_name):
     app = Flask(__name__)
-    freezer = Freezer(app)
 
     app.config.from_object(config[config_name])
 
@@ -31,6 +29,5 @@ def create_app(config_name):
     app.register_blueprint(contact_bp)
     app.register_blueprint(main_blueprint)
 
-    freezer.freeze()
 
     return app

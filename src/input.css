@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "node_modules/.pnpm/tailwindcss@4.2.2/node_modules/tailwindcss/dist/lib.d.mts";
 
 
 @font-face {
@@ -6,7 +6,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/roboto-slab-latin-wght-normal.woff2') format('woff2');
+  src: url('app/static/fonts/roboto-slab-latin-wght-normal.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/roboto-serif-latin-wght-normal.woff2') format('woff2');
+  src: url('app/static/fonts/roboto-serif-latin-wght-normal.woff2') format('woff2');
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/roboto-latin-wght-normal.woff2') format('woff2');
+  src: url('app/static/fonts/roboto-latin-wght-normal.woff2') format('woff2');
 }
 
 @theme {
